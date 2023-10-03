@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>5 Day Weather Forecast</title>
+</head>
+
+<body>
+    <header id="header" class="jumbotron jumbotron-fluid text-container">
+        <h1 id="header-text" class="display-2"></h1>
+    </header>
+
+    <aside>
+        <form id="searchForm" action="/search" method="GET">
+            <label for="search">Search:</label>
+            <input type="text" id="searchCity" placeholder="Search for a City...">
+            <button class="SearchBtn" type="submit">Search</button>
+        </form>
+        <div>
+            <h2 class="searchHistoryBox">Search History:</h2>
+            <ul id="historyButtons"></ul>
+        </div>
+        
+
+    </aside>
+
+    <main>
+        <div class="todayWeather">
+            <h2>City</h2>
+            <div id="current-weather"></div>
+        </div>
+        <div class="weekWeather">
+            <h2>5-day Forecast:</h2>
+            <div id="forecast"></div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

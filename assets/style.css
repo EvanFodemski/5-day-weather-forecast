@@ -1,0 +1,63 @@
+.weatherDashboard{
+  text-align: center;
+}
+aside{
+    float:left;
+    width: 350px;
+    height: auto;
+}
+
+
+.todayWeather{
+    width:1500px;
+    height:200px;
+    margin-left: 500px;
+    border-style: solid;
+}
+
+.weekWeather{
+    margin-top:10px;
+    width:1500px;
+    height:400px;
+    margin-left: 500px;
+    
+}
+
+.SearchBtn{
+    width: 350px;
+    height: 50px;
+    background-color: #058ED9;
+    margin-top: 8px;
+    box-shadow: none;
+    font-weight: 700;
+    
+   
+}
+
+
+.fiveDayBoxes{
+    display: inline-block;
+    border-style:solid;
+    height:200px;
+    width: 200px;
+    margin-left: 30px;
+    background-color: #68B5B8;
+    box-shadow: 5px 5px #888888;
+    text-decoration: solid;
+    font-weight: 700;
+    
+
+}
+
+
+
+
+
+button {
+    width: 350px;
+    border-style: solid;
+    margin-top: 10px;
+    background-color: #68B5B8;
+    box-shadow: 5px 5px #888888;
+    border-radius: 5px;
+}
